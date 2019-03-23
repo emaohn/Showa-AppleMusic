@@ -184,20 +184,90 @@
             </objects>
             <point key="canvasLocation" x="1464.8" y="-438.53073463268368"/>
         </scene>
-        <!--View Controller-->
+        <!--Session Overview-->
         <scene sceneID="oFs-wz-drJ">
             <objects>
-                <viewController id="dM3-nc-ylw" sceneMemberID="viewController">
+                <viewController id="dM3-nc-ylw" customClass="SessionOverviewViewController" customModule="Showa_AppleMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mXs-xa-8UN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QLj-15-VSB">
+                                <rect key="frame" x="15" y="79" width="345" height="524"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nice job! You spent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4v-Jv-GZw">
+                                        <rect key="frame" x="32" y="0.0" width="281.5" height="81"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="35"/>
+                                        <color key="textColor" red="0.64313725489999995" green="0.52156862749999999" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10m 35s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sr-W7-2fr">
+                                        <rect key="frame" x="21" y="111" width="303.5" height="80.5"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="85"/>
+                                        <color key="textColor" red="0.64313725489999995" green="0.52156862749999999" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minutes in the shower!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2S-Iy-a3M">
+                                        <rect key="frame" x="7" y="221.5" width="331.5" height="81"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="35"/>
+                                        <color key="textColor" red="0.64313725489999995" green="0.52156862749999999" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That's 4 minutes less than your average time." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPb-EU-xO4">
+                                        <rect key="frame" x="7" y="332.5" width="331" height="80.5"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="30"/>
+                                        <color key="textColor" red="0.64313725489999995" green="0.52156862749999999" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You saved about 4.8 gallons of water!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2Y-jk-4Rr">
+                                        <rect key="frame" x="24.5" y="443" width="296.5" height="81"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="0.69952955354783508" green="0.71452547401453925" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="i4v-Jv-GZw" firstAttribute="height" secondItem="2Sr-W7-2fr" secondAttribute="height" id="3zd-a2-4PC"/>
+                                    <constraint firstItem="2Sr-W7-2fr" firstAttribute="height" secondItem="V2S-Iy-a3M" secondAttribute="height" id="cdR-fU-T63"/>
+                                    <constraint firstItem="QPb-EU-xO4" firstAttribute="height" secondItem="q2Y-jk-4Rr" secondAttribute="height" id="gUc-lX-UM4"/>
+                                    <constraint firstItem="V2S-Iy-a3M" firstAttribute="height" secondItem="QPb-EU-xO4" secondAttribute="height" id="vXY-8u-XRq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QLj-15-VSB" secondAttribute="trailing" constant="15" id="T8T-55-WM6"/>
+                            <constraint firstItem="QLj-15-VSB" firstAttribute="leading" secondItem="mXs-xa-8UN" secondAttribute="leading" constant="15" id="cj5-mW-On7"/>
+                            <constraint firstItem="wp6-1X-MOa" firstAttribute="bottom" secondItem="QLj-15-VSB" secondAttribute="bottom" constant="15" id="dmN-e9-U2r"/>
+                            <constraint firstItem="QLj-15-VSB" firstAttribute="top" secondItem="wp6-1X-MOa" secondAttribute="top" constant="15" id="oa7-76-5hd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wp6-1X-MOa"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Session Overview" id="5tc-cV-cHg">
+                        <barButtonItem key="leftBarButtonItem" title="delete" image="icons8-x_filled" id="0Uq-15-bzj">
+                            <connections>
+                                <action selector="deleteButtonPressed:" destination="dM3-nc-ylw" id="aRg-14-HaZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="save" image="icons8-checkmark" id="gXI-4e-V7A">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="dM3-nc-ylw" id="uQv-du-BcR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="comparisonLabel" destination="QPb-EU-xO4" id="wxv-uN-rGk"/>
+                        <outlet property="deleteButton" destination="0Uq-15-bzj" id="J8W-cW-KgE"/>
+                        <outlet property="saveButton" destination="gXI-4e-V7A" id="lCy-C0-eb5"/>
+                        <outlet property="timeSpentLabel" destination="2Sr-W7-2fr" id="scP-aM-aub"/>
+                        <outlet property="waterSavedLabel" destination="q2Y-jk-4Rr" id="cWF-bh-vDv"/>
+                        <segue destination="FZT-CW-zH7" kind="unwind" identifier="back" unwindAction="unwindWithSegue:" id="3WY-TL-oce"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3MA-9p-crh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="FZT-CW-zH7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2197" y="-440"/>
+            <point key="canvasLocation" x="2196" y="-440.32983508245883"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="cqy-2B-yTF">
@@ -249,7 +319,9 @@
     </scenes>
     <resources>
         <image name="icons8-back_filled" width="32" height="32"/>
+        <image name="icons8-checkmark" width="32" height="32"/>
         <image name="icons8-sort_down_filled" width="75" height="75"/>
         <image name="icons8-sort_up_filled" width="75" height="75"/>
+        <image name="icons8-x_filled" width="32" height="32"/>
     </resources>
 </document>

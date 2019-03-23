@@ -13,7 +13,9 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
     var minutes = 0
     var seconds = 0;
     var timer = Timer()
+    var musicPlaying = false
     var countDownInit = 5
+    var secsPassed = 0
     var myMediaPlayer = MPMusicPlayerApplicationController.systemMusicPlayer
     @IBOutlet weak var selectMusicButton: UIButton!
     
@@ -42,6 +44,7 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
         endSessionButton.layer.cornerRadius = 25
         endSessionButton.layer.masksToBounds = true
         
+        musicPlaying = false
         timerLabel.text = "5"
     }
     
@@ -66,7 +69,7 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
     }
     
     func startShowerTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self,   selector: (#selector(self.updateTimer)), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(self.updateTimer)), userInfo: nil, repeats: true)
     }
     
     @objc func updateTimer() {
@@ -81,14 +84,17 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
         if seconds < 0 {
             timerLabel.textColor = UIColor.red
         }
+        secsPassed += 1
     }
     
     func startMusic() {
         myMediaPlayer.play()
+        musicPlaying = true
     }
     
     func endMusic() {
         myMediaPlayer.stop()
+        musicPlaying = false
     }
     
     @IBAction func endSessionButtonPressed(_ sender: Any) {
@@ -102,16 +108,20 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
         switch identifier {
         case "back": endMusic()
         case "sessionOverview":
+            guard let destination = segue.destination as? SessionOverviewViewController else {return}
+            destination.secondsPassed = secsPassed
             endMusic()
         default: break
         }
     }
     @IBAction func selectMusicButtonPressed(_ sender: UIButton) {
-        let myMediaPickerVC = MPMediaPickerController(mediaTypes: MPMediaType.music)
-        myMediaPickerVC.allowsPickingMultipleItems = true
-        myMediaPickerVC.popoverPresentationController?.sourceView = sender
-        myMediaPickerVC.delegate = self
-        self.present(myMediaPickerVC, animated: true, completion: nil)
+        if !musicPlaying {
+            let myMediaPickerVC = MPMediaPickerController(mediaTypes: MPMediaType.music)
+            myMediaPickerVC.allowsPickingMultipleItems = true
+            myMediaPickerVC.popoverPresentationController?.sourceView = sender
+            myMediaPickerVC.delegate = self
+            self.present(myMediaPickerVC, animated: true, completion: nil)
+        }
     }
     
     func mediaPickerDidCancel(_ mediaPicker: MPMediaPickerController) {
@@ -122,6 +132,7 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
         myMediaPlayer.setQueue(with: mediaItemCollection)
         mediaPicker.dismiss(animated: true, completion: nil)
         startCountdown()
+        selectMusicButton.setTitleColor(UIColor.black, for: .normal)
     }
     
 }
