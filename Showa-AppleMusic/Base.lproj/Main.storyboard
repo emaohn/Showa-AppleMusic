@@ -1,24 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wd3-u1-Zz5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Item 2-->
+        <scene sceneID="RzO-MC-7Qy">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="rSO-hM-s1M" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Ym-7q-MUn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QWu-6V-FZh"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Y3e-1o-Pj5"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W7f-os-VnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-213" y="227"/>
+        </scene>
+        <!--Shawa-->
+        <scene sceneID="y6A-B1-TLb">
+            <objects>
+                <viewController id="kDX-pe-jQ9" customClass="ViewController" customModule="Showa_AppleMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zV3-Wd-Wu2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onW-p5-edz">
+                                <rect key="frame" x="82.5" y="453" width="210" height="50"/>
+                                <color key="backgroundColor" red="0.64298662120000005" green="0.52104328649999998" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="09p-5s-9lw"/>
+                                    <constraint firstAttribute="height" constant="50" id="b94-lP-81r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <state key="normal" title="BEGIN SESSION">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RHX-rE-qEW" kind="show" identifier="beginSession" id="9Tb-hN-wnC"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKe-ri-Zpo">
+                                <rect key="frame" x="27.5" y="233" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kDX-pe-jQ9" id="naN-N9-R5x"/>
+                                    <outlet property="delegate" destination="kDX-pe-jQ9" id="cnZ-DK-Cnw"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rKe-ri-Zpo" firstAttribute="centerY" secondItem="bVs-ad-dBv" secondAttribute="centerY" id="4xN-zm-jNO"/>
+                            <constraint firstItem="bVs-ad-dBv" firstAttribute="bottom" secondItem="onW-p5-edz" secondAttribute="bottom" constant="115" id="F90-YV-Urb"/>
+                            <constraint firstItem="onW-p5-edz" firstAttribute="centerX" secondItem="bVs-ad-dBv" secondAttribute="centerX" id="fpy-Nj-fI1"/>
+                            <constraint firstItem="rKe-ri-Zpo" firstAttribute="centerX" secondItem="bVs-ad-dBv" secondAttribute="centerX" id="zNa-Cx-oag"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bVs-ad-dBv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Shawa" id="7kU-SN-KMv"/>
+                    <connections>
+                        <outlet property="button" destination="onW-p5-edz" id="Ojy-bB-2jc"/>
+                        <outlet property="timePicker" destination="rKe-ri-Zpo" id="uQc-nd-rdd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fKS-vg-Dnt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="725.60000000000002" y="-437.63118440779613"/>
+        </scene>
+        <!--Playing Session-->
+        <scene sceneID="zGc-4O-qvf">
+            <objects>
+                <viewController id="RHX-rE-qEW" customClass="SessionViewController" customModule="Showa_AppleMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lHZ-ml-GbH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1l-Nr-FLj">
+                                <rect key="frame" x="24" y="453" width="327" height="50"/>
+                                <color key="backgroundColor" red="0.64298662120000005" green="0.52104328649999998" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="16P-H6-uFl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="QcB-ef-eSi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <state key="normal" title="END SESSION">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="endSessionButtonPressed:" destination="RHX-rE-qEW" eventType="touchUpInside" id="kbq-gq-LV5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeZ-0v-qnd">
+                                <rect key="frame" x="66" y="290" width="243" height="102"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="85"/>
+                                <color key="textColor" red="0.64298662120000005" green="0.52104328649999998" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.64298662120000005" green="0.52104328649999998" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="p1l-Nr-FLj" firstAttribute="centerX" secondItem="tsQ-b4-8jY" secondAttribute="centerX" id="8Tl-2E-GDI"/>
+                            <constraint firstItem="TeZ-0v-qnd" firstAttribute="centerX" secondItem="tsQ-b4-8jY" secondAttribute="centerX" id="E5W-yJ-uTf"/>
+                            <constraint firstItem="TeZ-0v-qnd" firstAttribute="centerY" secondItem="tsQ-b4-8jY" secondAttribute="centerY" id="SJ9-jj-Zb4"/>
+                            <constraint firstItem="p1l-Nr-FLj" firstAttribute="leading" secondItem="tsQ-b4-8jY" secondAttribute="leading" constant="24" id="V3x-JE-6O0"/>
+                            <constraint firstItem="tsQ-b4-8jY" firstAttribute="trailing" secondItem="p1l-Nr-FLj" secondAttribute="trailing" constant="24" id="pgX-Hw-Ylc"/>
+                            <constraint firstItem="tsQ-b4-8jY" firstAttribute="bottom" secondItem="p1l-Nr-FLj" secondAttribute="bottom" constant="115" id="r6h-AZ-FuL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tsQ-b4-8jY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Playing Session" id="qfe-7W-7q6">
+                        <barButtonItem key="leftBarButtonItem" title="back" image="icons8-back_filled" id="G6Q-Nc-cvU">
+                            <color key="tintColor" red="0.64298662120000005" green="0.52104328649999998" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="1zw-Xz-rOr" kind="unwind" identifier="back" unwindAction="unwindWithSegue:" id="5FI-tw-OCX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="endSessionButton" destination="p1l-Nr-FLj" id="o16-km-wtD"/>
+                        <outlet property="timerLabel" destination="TeZ-0v-qnd" id="6Bk-0a-OhH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3T-c9-cw6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="1zw-Xz-rOr" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1464.8" y="-438.53073463268368"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cqy-2B-yTF">
+            <objects>
+                <tabBarController id="Wd3-u1-Zz5" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XEi-pK-Jar">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.64298662120000005" green="0.52104328649999998" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.64298662120000005" green="0.52104328649999998" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xuh-Zb-IeK" kind="relationship" relationship="viewControllers" id="OL2-Ck-F7h"/>
+                        <segue destination="rSO-hM-s1M" kind="relationship" relationship="viewControllers" id="UCY-ZM-D7Z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rkg-E0-yNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1165" y="-105"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="3MZ-8C-XTF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xuh-Zb-IeK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" id="hzM-bP-A06">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lu7-Dt-aIO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.64298662120000005" green="0.52104328649999998" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.64298662120000005" green="0.52104328649999998" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kDX-pe-jQ9" kind="relationship" relationship="rootViewController" id="87s-oa-A9L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tkT-a2-qkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-213.59999999999999" y="-437.63118440779613"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-back_filled" width="32" height="32"/>
+    </resources>
 </document>

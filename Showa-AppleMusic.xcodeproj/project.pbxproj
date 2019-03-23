@@ -13,6 +13,8 @@
 		E8C069C22245FB9900760959 /* Showa_AppleMusic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E8C069C02245FB9900760959 /* Showa_AppleMusic.xcdatamodeld */; };
 		E8C069C42245FB9B00760959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C069C32245FB9B00760959 /* Assets.xcassets */; };
 		E8C069C72245FB9B00760959 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C069C52245FB9B00760959 /* LaunchScreen.storyboard */; };
+		E8C069CF224607B400760959 /* UIColor+TC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069CE224607B400760959 /* UIColor+TC.swift */; };
+		E8C069D122460B6600760959 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069D022460B6600760959 /* SessionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E8C069C32245FB9B00760959 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8C069C62245FB9B00760959 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8C069C82245FB9B00760959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C069CE224607B400760959 /* UIColor+TC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+TC.swift"; sourceTree = "<group>"; };
+		E8C069D022460B6600760959 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				E8C069C52245FB9B00760959 /* LaunchScreen.storyboard */,
 				E8C069C82245FB9B00760959 /* Info.plist */,
 				E8C069C02245FB9900760959 /* Showa_AppleMusic.xcdatamodeld */,
+				E8C069CE224607B400760959 /* UIColor+TC.swift */,
+				E8C069D022460B6600760959 /* SessionViewController.swift */,
 			);
 			path = "Showa-AppleMusic";
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				E8C069BC2245FB9900760959 /* ViewController.swift in Sources */,
 				E8C069C22245FB9900760959 /* Showa_AppleMusic.xcdatamodeld in Sources */,
+				E8C069CF224607B400760959 /* UIColor+TC.swift in Sources */,
+				E8C069D122460B6600760959 /* SessionViewController.swift in Sources */,
 				E8C069BA2245FB9900760959 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
