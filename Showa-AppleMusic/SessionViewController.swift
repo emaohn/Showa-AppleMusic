@@ -7,14 +7,15 @@
 //
 
 import UIKit
-import Darwin
+import MediaPlayer
 
-class SessionViewController: UIViewController {
+class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
     var minutes = 0
     var seconds = 0;
     var timer = Timer()
-    var isTimerRunning = false
     var countDownInit = 5
+    var myMediaPlayer = MPMusicPlayerApplicationController.systemMusicPlayer
+    @IBOutlet weak var selectMusicButton: UIButton!
     
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var endSessionButton: UIButton!
@@ -30,7 +31,6 @@ class SessionViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setup()
-        startCountdown()
     }
     
     func setup() {
@@ -47,6 +47,7 @@ class SessionViewController: UIViewController {
     
     func startCountdown() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateInitialCountdown), userInfo: nil, repeats: true)
+        startMusic()
     }
     
     @objc func updateInitialCountdown() {
@@ -65,22 +66,62 @@ class SessionViewController: UIViewController {
     }
     
     func startShowerTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(self.updateTimer)), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self,   selector: (#selector(self.updateTimer)), userInfo: nil, repeats: true)
     }
     
     @objc func updateTimer() {
-        let minNum = String(format: "%02d", seconds / 60)
-        let secNum = String(format: "%02d", seconds % 60)
+        let minNum = String(format: "%02d", abs(seconds / 60))
+        let secNum = String(format: "%02d", abs(seconds % 60))
         timerLabel.text = "\(minNum):\(secNum)";
-        if seconds != 0 {
-            seconds -= 1
-        } else {
-            endTimer()
+        seconds -= 1
+        if seconds == 0 {
+            endMusic()
+        }
+        
+        if seconds < 0 {
+            timerLabel.textColor = UIColor.red
         }
     }
     
+    func startMusic() {
+        myMediaPlayer.play()
+    }
+    
+    func endMusic() {
+        myMediaPlayer.stop()
+    }
+    
     @IBAction func endSessionButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "back", sender: nil)
+        endTimer()
+        endMusic()
+        self.performSegue(withIdentifier: "sessionOverview", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else {return}
+        switch identifier {
+        case "back": endMusic()
+        case "sessionOverview":
+            endMusic()
+        default: break
+        }
+    }
+    @IBAction func selectMusicButtonPressed(_ sender: UIButton) {
+        let myMediaPickerVC = MPMediaPickerController(mediaTypes: MPMediaType.music)
+        myMediaPickerVC.allowsPickingMultipleItems = true
+        myMediaPickerVC.popoverPresentationController?.sourceView = sender
+        myMediaPickerVC.delegate = self
+        self.present(myMediaPickerVC, animated: true, completion: nil)
+    }
+    
+    func mediaPickerDidCancel(_ mediaPicker: MPMediaPickerController) {
+        mediaPicker.dismiss(animated: true, completion: nil)
+    }
+    
+    func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
+        myMediaPlayer.setQueue(with: mediaItemCollection)
+        mediaPicker.dismiss(animated: true, completion: nil)
+        startCountdown()
     }
     
 }

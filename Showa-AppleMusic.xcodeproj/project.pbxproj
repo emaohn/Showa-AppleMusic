@@ -15,6 +15,7 @@
 		E8C069C72245FB9B00760959 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C069C52245FB9B00760959 /* LaunchScreen.storyboard */; };
 		E8C069CF224607B400760959 /* UIColor+TC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069CE224607B400760959 /* UIColor+TC.swift */; };
 		E8C069D122460B6600760959 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069D022460B6600760959 /* SessionViewController.swift */; };
+		E8C069D3224694AD00760959 /* SessionOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069D2224694AD00760959 /* SessionOverviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E8C069C82245FB9B00760959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8C069CE224607B400760959 /* UIColor+TC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+TC.swift"; sourceTree = "<group>"; };
 		E8C069D022460B6600760959 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		E8C069D2224694AD00760959 /* SessionOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionOverviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				E8C069C02245FB9900760959 /* Showa_AppleMusic.xcdatamodeld */,
 				E8C069CE224607B400760959 /* UIColor+TC.swift */,
 				E8C069D022460B6600760959 /* SessionViewController.swift */,
+				E8C069D2224694AD00760959 /* SessionOverviewViewController.swift */,
 			);
 			path = "Showa-AppleMusic";
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				E8C069C22245FB9900760959 /* Showa_AppleMusic.xcdatamodeld in Sources */,
 				E8C069CF224607B400760959 /* UIColor+TC.swift in Sources */,
 				E8C069D122460B6600760959 /* SessionViewController.swift in Sources */,
+				E8C069D3224694AD00760959 /* SessionOverviewViewController.swift in Sources */,
 				E8C069BA2245FB9900760959 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
