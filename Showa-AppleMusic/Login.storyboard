@@ -241,7 +241,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Additionally, delivering, treating, and heating the hot water is also extremely energy intensive. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOl-Pe-jvA">
-                                <rect key="frame" x="-309" y="328.5" width="993" height="30"/>
+                                <rect key="frame" x="44" y="283.5" width="287" height="120"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
                                 <color key="textColor" red="0.73338694179999997" green="0.71735930960000005" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -251,6 +251,8 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="tOl-Pe-jvA" firstAttribute="centerX" secondItem="k3C-2F-m40" secondAttribute="centerX" id="Anq-8a-U9C"/>
+                            <constraint firstAttribute="trailing" secondItem="tOl-Pe-jvA" secondAttribute="trailing" constant="44" id="GwT-xr-q8d"/>
+                            <constraint firstItem="tOl-Pe-jvA" firstAttribute="leading" secondItem="T2p-yx-eiG" secondAttribute="leading" constant="44" id="h3J-tz-co6"/>
                             <constraint firstItem="tOl-Pe-jvA" firstAttribute="centerY" secondItem="k3C-2F-m40" secondAttribute="centerY" id="ztF-ye-htE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k3C-2F-m40"/>

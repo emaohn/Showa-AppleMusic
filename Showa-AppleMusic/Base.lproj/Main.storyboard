@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled design (1).png" translatesAutoresizingMaskIntoConstraints="NO" id="5b3-Je-61a">
-                                <rect key="frame" x="15" y="223.5" width="345" height="240"/>
+                                <rect key="frame" x="15" y="199" width="345" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="AGJ-Ug-7Yn"/>
                                 </constraints>
@@ -164,10 +164,11 @@
                                     <action selector="selectMusicButtonPressed:" destination="RHX-rE-qEW" eventType="touchUpInside" id="NFA-KD-949"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get in the shower!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNx-TS-O9Q">
-                                <rect key="frame" x="102" y="114" width="171" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get in the shower!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNx-TS-O9Q">
+                                <rect key="frame" x="48" y="114" width="279" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pNx-TS-O9Q" secondAttribute="height" multiplier="19:3" id="AnS-fg-skV"/>
+                                    <constraint firstAttribute="height" constant="44" id="wbE-3u-hv7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
                                 <color key="textColor" red="0.82745098039999998" green="0.1647058824" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
@@ -301,6 +302,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="xuh-Zb-IeK" kind="relationship" relationship="viewControllers" id="OL2-Ck-F7h"/>
+                        <segue destination="rSO-hM-s1M" kind="relationship" relationship="viewControllers" id="EZS-1c-fyu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkg-E0-yNB" userLabel="First Responder" sceneMemberID="firstResponder"/>

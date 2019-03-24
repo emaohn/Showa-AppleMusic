@@ -11,12 +11,12 @@
 		E847CEF72247B4BA00E90BDA /* launchShawa.png in Resources */ = {isa = PBXBuildFile; fileRef = E847CEF62247B4BA00E90BDA /* launchShawa.png */; };
 		E847CEFB2247B5A800E90BDA /* barc (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E847CEFA2247B5A800E90BDA /* barc (1).png */; };
 		E847CEFF2247B83300E90BDA /* Untitled design (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E847CEFE2247B83200E90BDA /* Untitled design (1).png */; };
+		E847CF012247BD0600E90BDA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E847CF002247BD0600E90BDA /* Launch Screen.storyboard */; };
 		E8C069BA2245FB9900760959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069B92245FB9900760959 /* AppDelegate.swift */; };
 		E8C069BC2245FB9900760959 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069BB2245FB9900760959 /* ViewController.swift */; };
 		E8C069BF2245FB9900760959 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C069BD2245FB9900760959 /* Main.storyboard */; };
 		E8C069C22245FB9900760959 /* Showa_AppleMusic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E8C069C02245FB9900760959 /* Showa_AppleMusic.xcdatamodeld */; };
 		E8C069C42245FB9B00760959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C069C32245FB9B00760959 /* Assets.xcassets */; };
-		E8C069C72245FB9B00760959 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C069C52245FB9B00760959 /* LaunchScreen.storyboard */; };
 		E8C069CF224607B400760959 /* UIColor+TC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069CE224607B400760959 /* UIColor+TC.swift */; };
 		E8C069D122460B6600760959 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069D022460B6600760959 /* SessionViewController.swift */; };
 		E8C069D3224694AD00760959 /* SessionOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069D2224694AD00760959 /* SessionOverviewViewController.swift */; };
@@ -35,13 +35,13 @@
 		E847CEF62247B4BA00E90BDA /* launchShawa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchShawa.png; sourceTree = "<group>"; };
 		E847CEFA2247B5A800E90BDA /* barc (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "barc (1).png"; sourceTree = "<group>"; };
 		E847CEFE2247B83200E90BDA /* Untitled design (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Untitled design (1).png"; sourceTree = "<group>"; };
+		E847CF002247BD0600E90BDA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E8C069B62245FB9900760959 /* Showa-AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Showa-AppleMusic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C069B92245FB9900760959 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8C069BB2245FB9900760959 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8C069BE2245FB9900760959 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8C069C12245FB9900760959 /* Showa_AppleMusic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Showa_AppleMusic.xcdatamodel; sourceTree = "<group>"; };
 		E8C069C32245FB9B00760959 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E8C069C62245FB9B00760959 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8C069C82245FB9B00760959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8C069CE224607B400760959 /* UIColor+TC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+TC.swift"; sourceTree = "<group>"; };
 		E8C069D022460B6600760959 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
@@ -111,7 +111,6 @@
 				E8C069BD2245FB9900760959 /* Main.storyboard */,
 				E8C069C32245FB9B00760959 /* Assets.xcassets */,
 				E847CEF62247B4BA00E90BDA /* launchShawa.png */,
-				E8C069C52245FB9B00760959 /* LaunchScreen.storyboard */,
 				E8C069C82245FB9B00760959 /* Info.plist */,
 				E8C069C02245FB9900760959 /* Showa_AppleMusic.xcdatamodeld */,
 				E8C069CE224607B400760959 /* UIColor+TC.swift */,
@@ -126,6 +125,7 @@
 				E8C069E02246C24400760959 /* Person.swift */,
 				E847CEFE2247B83200E90BDA /* Untitled design (1).png */,
 				E847CEFA2247B5A800E90BDA /* barc (1).png */,
+				E847CF002247BD0600E90BDA /* Launch Screen.storyboard */,
 			);
 			path = "Showa-AppleMusic";
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 			files = (
 				E847CEFF2247B83300E90BDA /* Untitled design (1).png in Resources */,
 				E8C069D52246BA5500760959 /* GoogleService-Info.plist in Resources */,
-				E8C069C72245FB9B00760959 /* LaunchScreen.storyboard in Resources */,
+				E847CF012247BD0600E90BDA /* Launch Screen.storyboard in Resources */,
 				E8C069C42245FB9B00760959 /* Assets.xcassets in Resources */,
 				E8C069D72246BC1A00760959 /* Login.storyboard in Resources */,
 				E8C069BF2245FB9900760959 /* Main.storyboard in Resources */,
@@ -297,14 +297,6 @@
 				E8C069BE2245FB9900760959 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E8C069C52245FB9B00760959 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E8C069C62245FB9B00760959 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
