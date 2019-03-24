@@ -18,8 +18,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
-
     }
 
     func setup() {
@@ -33,7 +31,9 @@ class ViewController: UIViewController {
         button.layer.shadowRadius = 15
         button.layer.cornerRadius = 25
         button.layer.masksToBounds = true
+    
     }
+    
     
     func reloadTime() {
         if time > 15{
@@ -47,6 +47,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setup()
     }
     
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
@@ -73,7 +74,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func downButtonPressed(_ sender: Any) {
-        if time > 0 {
+        if time > 1 {
             time -= 1
             reloadTime()
         }

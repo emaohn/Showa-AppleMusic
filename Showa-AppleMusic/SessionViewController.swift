@@ -8,6 +8,7 @@
 
 import UIKit
 import MediaPlayer
+import Firebase
 
 class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
     var minutes = 0
@@ -16,6 +17,11 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
     var musicPlaying = false
     var countDownInit = 5
     var secsPassed = 0
+    
+    var userData = [DataSnapshot]()
+    var dataRetrieved = false
+    var ref: DatabaseReference?
+    
     var myMediaPlayer = MPMusicPlayerApplicationController.systemMusicPlayer
     @IBOutlet weak var selectMusicButton: UIButton!
     
@@ -25,6 +31,8 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        ref = Database.database().reference()
+        
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
         rightSwipe.direction = UISwipeGestureRecognizer.Direction.right
         self.view.addGestureRecognizer(rightSwipe)
@@ -32,6 +40,7 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        retrieveData()
         setup()
     }
     
@@ -43,6 +52,8 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
         endSessionButton.layer.shadowRadius = 15
         endSessionButton.layer.cornerRadius = 25
         endSessionButton.layer.masksToBounds = true
+        endSessionButton.isEnabled = false
+        endSessionButton.backgroundColor = UIColor.gray
         
         musicPlaying = false
         timerLabel.text = "5"
@@ -61,6 +72,8 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
             endTimer()
             seconds = minutes * 60
             startShowerTimer()
+            endSessionButton.isEnabled = true
+            endSessionButton.backgroundColor = UIColor.tcPurple
         }
     }
     
@@ -110,6 +123,7 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
         case "sessionOverview":
             guard let destination = segue.destination as? SessionOverviewViewController else {return}
             destination.secondsPassed = secsPassed
+            destination.userData = self.userData
             endMusic()
         default: break
         }
@@ -133,6 +147,28 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
         mediaPicker.dismiss(animated: true, completion: nil)
         startCountdown()
         selectMusicButton.setTitleColor(UIColor.black, for: .normal)
+    }
+    
+    func retrieveData() {
+        let dataRef = Database.database().reference().child("user")
+        let dispatchGroup = DispatchGroup()
+        dispatchGroup.enter()
+        
+        DispatchQueue.main.async {
+            dataRef.observeSingleEvent(of: .value) { (snapshot) in
+                
+                guard let snapshot = snapshot.children.allObjects as? [DataSnapshot] else {return }
+                
+                self.userData = [DataSnapshot]()
+                
+                for user in snapshot {
+                    self.userData.append(user)
+                }
+                
+                dispatchGroup.leave()
+                self.dataRetrieved = true
+            }
+        }
     }
     
 }

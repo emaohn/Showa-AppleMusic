@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE5E584B0D38ED39F3BB8639 /* Pods_Showa_AppleMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CABC2B4A0CD3AC673414C0 /* Pods_Showa_AppleMusic.framework */; };
 		E8C069BA2245FB9900760959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069B92245FB9900760959 /* AppDelegate.swift */; };
 		E8C069BC2245FB9900760959 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069BB2245FB9900760959 /* ViewController.swift */; };
 		E8C069BF2245FB9900760959 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C069BD2245FB9900760959 /* Main.storyboard */; };
@@ -16,9 +17,18 @@
 		E8C069CF224607B400760959 /* UIColor+TC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069CE224607B400760959 /* UIColor+TC.swift */; };
 		E8C069D122460B6600760959 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069D022460B6600760959 /* SessionViewController.swift */; };
 		E8C069D3224694AD00760959 /* SessionOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069D2224694AD00760959 /* SessionOverviewViewController.swift */; };
+		E8C069D52246BA5500760959 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8C069D42246BA4C00760959 /* GoogleService-Info.plist */; };
+		E8C069D72246BC1A00760959 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C069D62246BC1A00760959 /* Login.storyboard */; };
+		E8C069D92246BEDC00760959 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069D82246BEDC00760959 /* LoginViewController.swift */; };
+		E8C069DB2246BEEA00760959 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069DA2246BEEA00760959 /* CreateUsernameViewController.swift */; };
+		E8C069DD2246BFC400760959 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069DC2246BFC400760959 /* UserService.swift */; };
+		E8C069DF2246BFF500760959 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069DE2246BFF500760959 /* Constants.swift */; };
+		E8C069E12246C24400760959 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069E02246C24400760959 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E3398D322ED6CC5436C4624 /* Pods-Showa-AppleMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showa-AppleMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Showa-AppleMusic/Pods-Showa-AppleMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		E1CABC2B4A0CD3AC673414C0 /* Pods_Showa_AppleMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Showa_AppleMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C069B62245FB9900760959 /* Showa-AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Showa-AppleMusic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C069B92245FB9900760959 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8C069BB2245FB9900760959 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +40,14 @@
 		E8C069CE224607B400760959 /* UIColor+TC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+TC.swift"; sourceTree = "<group>"; };
 		E8C069D022460B6600760959 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 		E8C069D2224694AD00760959 /* SessionOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionOverviewViewController.swift; sourceTree = "<group>"; };
+		E8C069D42246BA4C00760959 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E8C069D62246BC1A00760959 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		E8C069D82246BEDC00760959 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E8C069DA2246BEEA00760959 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
+		E8C069DC2246BFC400760959 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		E8C069DE2246BFF500760959 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E8C069E02246C24400760959 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F637BDA21EF1739C0B57E96F /* Pods-Showa-AppleMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showa-AppleMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Showa-AppleMusic/Pods-Showa-AppleMusic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5E584B0D38ED39F3BB8639 /* Pods_Showa_AppleMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		438927618F240D96574165BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1CABC2B4A0CD3AC673414C0 /* Pods_Showa_AppleMusic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80D4034C34D9758B7CF7208C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E3398D322ED6CC5436C4624 /* Pods-Showa-AppleMusic.debug.xcconfig */,
+				F637BDA21EF1739C0B57E96F /* Pods-Showa-AppleMusic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E8C069AD2245FB9900760959 = {
 			isa = PBXGroup;
 			children = (
 				E8C069B82245FB9900760959 /* Showa-AppleMusic */,
 				E8C069B72245FB9900760959 /* Products */,
+				80D4034C34D9758B7CF7208C /* Pods */,
+				438927618F240D96574165BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +109,14 @@
 				E8C069C02245FB9900760959 /* Showa_AppleMusic.xcdatamodeld */,
 				E8C069CE224607B400760959 /* UIColor+TC.swift */,
 				E8C069D022460B6600760959 /* SessionViewController.swift */,
+				E8C069D42246BA4C00760959 /* GoogleService-Info.plist */,
 				E8C069D2224694AD00760959 /* SessionOverviewViewController.swift */,
+				E8C069D62246BC1A00760959 /* Login.storyboard */,
+				E8C069D82246BEDC00760959 /* LoginViewController.swift */,
+				E8C069DA2246BEEA00760959 /* CreateUsernameViewController.swift */,
+				E8C069DC2246BFC400760959 /* UserService.swift */,
+				E8C069DE2246BFF500760959 /* Constants.swift */,
+				E8C069E02246C24400760959 /* Person.swift */,
 			);
 			path = "Showa-AppleMusic";
 			sourceTree = "<group>";
@@ -83,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8C069CB2245FB9B00760959 /* Build configuration list for PBXNativeTarget "Showa-AppleMusic" */;
 			buildPhases = (
+				F5D4C62732D553C2BBB5E898 /* [CP] Check Pods Manifest.lock */,
 				E8C069B22245FB9900760959 /* Sources */,
 				E8C069B32245FB9900760959 /* Frameworks */,
 				E8C069B42245FB9900760959 /* Resources */,
+				1C9A80085E9A319826F8FA44 /* [CP] Embed Pods Frameworks */,
+				54920A205CC96466E5CD8DB2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,25 +182,95 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C069D52246BA5500760959 /* GoogleService-Info.plist in Resources */,
 				E8C069C72245FB9B00760959 /* LaunchScreen.storyboard in Resources */,
 				E8C069C42245FB9B00760959 /* Assets.xcassets in Resources */,
+				E8C069D72246BC1A00760959 /* Login.storyboard in Resources */,
 				E8C069BF2245FB9900760959 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C9A80085E9A319826F8FA44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Showa-AppleMusic/Pods-Showa-AppleMusic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Showa-AppleMusic/Pods-Showa-AppleMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54920A205CC96466E5CD8DB2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Showa-AppleMusic/Pods-Showa-AppleMusic-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Showa-AppleMusic/Pods-Showa-AppleMusic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5D4C62732D553C2BBB5E898 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Showa-AppleMusic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E8C069B22245FB9900760959 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C069DB2246BEEA00760959 /* CreateUsernameViewController.swift in Sources */,
+				E8C069D92246BEDC00760959 /* LoginViewController.swift in Sources */,
+				E8C069DD2246BFC400760959 /* UserService.swift in Sources */,
 				E8C069BC2245FB9900760959 /* ViewController.swift in Sources */,
 				E8C069C22245FB9900760959 /* Showa_AppleMusic.xcdatamodeld in Sources */,
+				E8C069DF2246BFF500760959 /* Constants.swift in Sources */,
 				E8C069CF224607B400760959 /* UIColor+TC.swift in Sources */,
 				E8C069D122460B6600760959 /* SessionViewController.swift in Sources */,
 				E8C069D3224694AD00760959 /* SessionOverviewViewController.swift in Sources */,
 				E8C069BA2245FB9900760959 /* AppDelegate.swift in Sources */,
+				E8C069E12246C24400760959 /* Person.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +414,7 @@
 		};
 		E8C069CC2245FB9B00760959 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E3398D322ED6CC5436C4624 /* Pods-Showa-AppleMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +433,7 @@
 		};
 		E8C069CD2245FB9B00760959 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F637BDA21EF1739C0B57E96F /* Pods-Showa-AppleMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_Showa_AppleMusic {
+  umbrella header "Pods-Showa-AppleMusic-umbrella.h"
+
+  export *
+  module * { export * }
+}
