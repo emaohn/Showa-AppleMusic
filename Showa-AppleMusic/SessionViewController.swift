@@ -24,6 +24,7 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
     
     var myMediaPlayer = MPMusicPlayerApplicationController.systemMusicPlayer
     @IBOutlet weak var selectMusicButton: UIButton!
+    @IBOutlet weak var getInShowerLabel: UILabel!
     
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var endSessionButton: UIButton!
@@ -54,6 +55,7 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
         endSessionButton.layer.masksToBounds = true
         endSessionButton.isEnabled = false
         endSessionButton.backgroundColor = UIColor.gray
+        getInShowerLabel.textColor = UIColor.black
         
         musicPlaying = false
         timerLabel.text = "5"
@@ -62,6 +64,7 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
     func startCountdown() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateInitialCountdown), userInfo: nil, repeats: true)
         startMusic()
+        getInShowerLabel.textColor = UIColor.red
     }
     
     @objc func updateInitialCountdown() {
@@ -83,6 +86,7 @@ class SessionViewController: UIViewController, MPMediaPickerControllerDelegate{
     
     func startShowerTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(self.updateTimer)), userInfo: nil, repeats: true)
+        getInShowerLabel.textColor = UIColor.black
     }
     
     @objc func updateTimer() {

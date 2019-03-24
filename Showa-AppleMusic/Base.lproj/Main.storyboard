@@ -10,14 +10,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Chart View Controller-->
         <scene sceneID="RzO-MC-7Qy">
             <objects>
-                <viewController id="rSO-hM-s1M" sceneMemberID="viewController">
+                <viewController id="rSO-hM-s1M" customClass="ChartViewController" customModule="Showa_AppleMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Ym-7q-MUn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled design (1).png" translatesAutoresizingMaskIntoConstraints="NO" id="5b3-Je-61a">
+                                <rect key="frame" x="15" y="223.5" width="345" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="AGJ-Ug-7Yn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5b3-Je-61a" secondAttribute="trailing" constant="15" id="C1O-RO-8NP"/>
+                            <constraint firstItem="5b3-Je-61a" firstAttribute="centerY" secondItem="QWu-6V-FZh" secondAttribute="centerY" id="rYc-Ff-zAe"/>
+                            <constraint firstItem="5b3-Je-61a" firstAttribute="leading" secondItem="1Ym-7q-MUn" secondAttribute="leading" constant="15" id="wQm-Jh-j6i"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QWu-6V-FZh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="icons8-graph" id="Y3e-1o-Pj5"/>
@@ -151,6 +164,15 @@
                                     <action selector="selectMusicButtonPressed:" destination="RHX-rE-qEW" eventType="touchUpInside" id="NFA-KD-949"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get in the shower!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNx-TS-O9Q">
+                                <rect key="frame" x="102" y="114" width="171" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pNx-TS-O9Q" secondAttribute="height" multiplier="19:3" id="AnS-fg-skV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
+                                <color key="textColor" red="0.82745098039999998" green="0.1647058824" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.64298662120000005" green="0.52104328649999998" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -158,9 +180,11 @@
                             <constraint firstItem="7Z9-yG-zWz" firstAttribute="centerX" secondItem="tsQ-b4-8jY" secondAttribute="centerX" id="4xH-30-fkT"/>
                             <constraint firstItem="tsQ-b4-8jY" firstAttribute="bottom" secondItem="7Z9-yG-zWz" secondAttribute="bottom" constant="40" id="7hH-o4-SbA"/>
                             <constraint firstItem="p1l-Nr-FLj" firstAttribute="centerX" secondItem="tsQ-b4-8jY" secondAttribute="centerX" id="8Tl-2E-GDI"/>
+                            <constraint firstItem="pNx-TS-O9Q" firstAttribute="top" secondItem="tsQ-b4-8jY" secondAttribute="top" constant="50" id="C1q-cB-G7V"/>
                             <constraint firstItem="TeZ-0v-qnd" firstAttribute="centerX" secondItem="tsQ-b4-8jY" secondAttribute="centerX" id="E5W-yJ-uTf"/>
                             <constraint firstItem="TeZ-0v-qnd" firstAttribute="centerY" secondItem="tsQ-b4-8jY" secondAttribute="centerY" id="SJ9-jj-Zb4"/>
                             <constraint firstItem="p1l-Nr-FLj" firstAttribute="leading" secondItem="tsQ-b4-8jY" secondAttribute="leading" constant="50" id="V3x-JE-6O0"/>
+                            <constraint firstItem="pNx-TS-O9Q" firstAttribute="centerX" secondItem="tsQ-b4-8jY" secondAttribute="centerX" id="VOD-CD-bH8"/>
                             <constraint firstItem="tsQ-b4-8jY" firstAttribute="trailing" secondItem="p1l-Nr-FLj" secondAttribute="trailing" constant="50" id="pgX-Hw-Ylc"/>
                             <constraint firstItem="tsQ-b4-8jY" firstAttribute="bottom" secondItem="p1l-Nr-FLj" secondAttribute="bottom" constant="115" id="r6h-AZ-FuL"/>
                         </constraints>
@@ -173,6 +197,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="endSessionButton" destination="p1l-Nr-FLj" id="o16-km-wtD"/>
+                        <outlet property="getInShowerLabel" destination="pNx-TS-O9Q" id="jbt-fs-nHh"/>
                         <outlet property="selectMusicButton" destination="7Z9-yG-zWz" id="2qY-O2-hyQ"/>
                         <outlet property="timerLabel" destination="TeZ-0v-qnd" id="6Bk-0a-OhH"/>
                         <segue destination="dM3-nc-ylw" kind="show" identifier="sessionOverview" id="giw-fr-gwa"/>
@@ -198,7 +223,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nice! You spent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4v-Jv-GZw">
                                         <rect key="frame" x="59" y="0.0" width="227.5" height="108.5"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="35"/>
-                                        <color key="textColor" red="0.73338694178271424" green="0.71735930961060612" blue="0.93809314971015223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10m 35s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sr-W7-2fr">
@@ -210,7 +235,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in the shower!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2S-Iy-a3M">
                                         <rect key="frame" x="69.5" y="277" width="206.5" height="108.5"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="35"/>
-                                        <color key="textColor" red="0.73338694179999997" green="0.71735930960000005" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That's 4 minutes less than your average time." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPb-EU-xO4">
@@ -276,7 +301,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="xuh-Zb-IeK" kind="relationship" relationship="viewControllers" id="OL2-Ck-F7h"/>
-                        <segue destination="rSO-hM-s1M" kind="relationship" relationship="viewControllers" id="UCY-ZM-D7Z"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkg-E0-yNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -297,7 +321,7 @@
                         <color key="tintColor" red="0.64298662120000005" green="0.52104328649999998" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.64298662120000005" green="0.52104328649999998" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -311,6 +335,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Untitled design (1).png" width="1024" height="768"/>
         <image name="icons8-back_filled" width="32" height="32"/>
         <image name="icons8-cancel" width="32" height="32"/>
         <image name="icons8-checkmark" width="32" height="32"/>

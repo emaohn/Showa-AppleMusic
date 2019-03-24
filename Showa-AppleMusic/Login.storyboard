@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B4d-y7-pXw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A4o-sV-rtL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,7 +14,7 @@
         <scene sceneID="Eud-Db-rFL">
             <objects>
                 <viewController id="Spf-dY-1hu" customClass="LoginViewController" customModule="Showa_AppleMusic" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YsI-da-rlF">
+                    <view key="view" contentMode="scaleToFill" id="YsI-da-rlF" customClass="LDGradientView" customModule="Showa_AppleMusic" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="width" secondItem="wHk-ey-wOE" secondAttribute="height" multiplier="13:6" id="mhf-p1-SgE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="80"/>
-                                <color key="textColor" red="0.64313725489999995" green="0.52156862749999999" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kno-GR-NZQ">
@@ -52,6 +52,17 @@
                             <constraint firstItem="kno-GR-NZQ" firstAttribute="centerX" secondItem="Utx-WG-Gne" secondAttribute="centerX" id="RGp-Ta-ezq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Utx-WG-Gne"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.046220653549999997" green="0.046220653549999997" blue="0.046220653549999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.71405955489999995" green="0.62212966209999998" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                                <real key="value" value="310"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="Em0-Sv-jn6"/>
                     <connections>
@@ -76,7 +87,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4a-B0-fWh">
                                         <rect key="frame" x="3.5" y="0.0" width="298.5" height="52"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="43"/>
-                                        <color key="textColor" red="0.64313725489999995" green="0.52156862749999999" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex. Johnny Appleseed" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="td5-Ch-xJN">
@@ -126,23 +137,350 @@
             </objects>
             <point key="canvasLocation" x="1524" y="149.77511244377811"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="gz6-7z-FNA">
+        <!--View Controller-->
+        <scene sceneID="rG7-Pb-xZ6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="B4d-y7-pXw" sceneMemberID="viewController">
+                <viewController id="OqF-Pk-wJ7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WS3-WJ-5FG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Shawā!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLR-OF-4h8">
+                                <rect key="frame" x="43.5" y="243" width="288" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CLR-OF-4h8" secondAttribute="height" multiplier="288:43" id="bhg-T8-eC3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="35"/>
+                                <color key="textColor" red="0.73338694179999997" green="0.71735930960000005" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="CLR-OF-4h8" firstAttribute="top" secondItem="wlt-fl-ZWs" secondAttribute="top" constant="223" id="cI1-yH-l42"/>
+                            <constraint firstItem="CLR-OF-4h8" firstAttribute="centerX" secondItem="wlt-fl-ZWs" secondAttribute="centerX" id="wac-bB-opD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wlt-fl-ZWs"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ffA-7s-4Xi" appends="YES" id="kiW-HJ-2S9"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="lfX-JN-elt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aj8-Xv-Zg4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ffA-7s-4Xi">
+                    <connections>
+                        <segue destination="HRM-pk-lUB" kind="show" id="pph-C0-ahF"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1050.4000000000001" y="-783.05847076461771"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LWc-j9-4ao">
+            <objects>
+                <viewController id="HRM-pk-lUB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jGb-S1-AzL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwI-5N-uwp">
+                                <rect key="frame" x="166" y="266" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="oxI-bp-GZA">
+                                <rect key="frame" x="44" y="229.5" width="271" height="228"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know, an average person uses 2.1 gallons of water per minute in the shower? " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4N-w5-WBe">
+                                        <rect key="frame" x="0.0" y="0.0" width="271" height="120"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="0.73338694179999997" green="0.71735930960000005" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That's 40.2 gallons for a 20 minute shower!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yae-Sy-JKM">
+                                        <rect key="frame" x="0.0" y="168" width="271" height="60"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="0.73338694179999997" green="0.71735930960000005" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="oxI-bp-GZA" secondAttribute="trailing" constant="44" id="A2z-oY-bNN"/>
+                            <constraint firstItem="oxI-bp-GZA" firstAttribute="centerY" secondItem="utZ-hu-KHx" secondAttribute="centerY" id="JDc-dQ-fYo"/>
+                            <constraint firstItem="oxI-bp-GZA" firstAttribute="leading" secondItem="utZ-hu-KHx" secondAttribute="leading" constant="44" id="f1N-KX-2Hm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="utZ-hu-KHx"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ddS-c9-baT" appends="YES" id="Ab7-9y-fA8"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hu-zJ-ocU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ddS-c9-baT">
+                    <connections>
+                        <segue destination="eov-f7-LY9" kind="show" id="6g3-5a-xHr"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1775.2" y="-783.05847076461771"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bbz-ul-w84">
+            <objects>
+                <viewController id="eov-f7-LY9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T2p-yx-eiG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Additionally, delivering, treating, and heating the hot water is also extremely energy intensive. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOl-Pe-jvA">
+                                <rect key="frame" x="-309" y="328.5" width="993" height="30"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <color key="textColor" red="0.73338694179999997" green="0.71735930960000005" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="tOl-Pe-jvA" firstAttribute="centerX" secondItem="k3C-2F-m40" secondAttribute="centerX" id="Anq-8a-U9C"/>
+                            <constraint firstItem="tOl-Pe-jvA" firstAttribute="centerY" secondItem="k3C-2F-m40" secondAttribute="centerY" id="ztF-ye-htE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k3C-2F-m40"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6WF-qT-Amq" appends="YES" id="3eC-uo-dNT"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jmq-9C-kIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="6WF-qT-Amq">
+                    <connections>
+                        <segue destination="aXV-Vk-Aum" kind="show" id="YFt-DZ-jiy"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2512.8000000000002" y="-783.05847076461771"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZrJ-5I-uT2">
+            <objects>
+                <viewController id="aXV-Vk-Aum" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dfG-0w-m0M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gf6-Px-wC6">
+                                <rect key="frame" x="44" y="249.5" width="287" height="188"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shawā fights this problem by bringing awareness to how much individuals spend in the shower! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7s-ta-zCy">
+                                        <rect key="frame" x="0.0" y="0.0" width="287" height="120"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="0.73338694179999997" green="0.71735930960000005" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We also help users shorten their shower times." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYY-QE-F1S">
+                                        <rect key="frame" x="0.0" y="128" width="287" height="60"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="0.73338694179999997" green="0.71735930960000005" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Gf6-Px-wC6" firstAttribute="leading" secondItem="o6L-QL-wlu" secondAttribute="leading" constant="44" id="EpN-hn-As6"/>
+                            <constraint firstAttribute="trailing" secondItem="Gf6-Px-wC6" secondAttribute="trailing" constant="44" id="Uit-0j-aiZ"/>
+                            <constraint firstItem="Gf6-Px-wC6" firstAttribute="centerX" secondItem="o6L-QL-wlu" secondAttribute="centerX" id="eXh-6Z-bIK"/>
+                            <constraint firstItem="Gf6-Px-wC6" firstAttribute="centerY" secondItem="o6L-QL-wlu" secondAttribute="centerY" id="rab-UI-OqH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o6L-QL-wlu"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fYg-I0-wv1" appends="YES" id="nDb-2M-fXz"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jP0-TC-pCp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fYg-I0-wv1">
+                    <connections>
+                        <segue destination="kpv-CE-veK" kind="show" id="LSs-FL-vBT"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3263.1999999999998" y="-789.35532233883066"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UL5-Se-fBO">
+            <objects>
+                <viewController id="kpv-CE-veK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dhb-Vt-Ncd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Tao-p4-k6Q">
+                                <rect key="frame" x="44" y="231.5" width="287" height="224"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the amount of time you want to spend in the showera" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dh-U1-VFk">
+                                        <rect key="frame" x="0.0" y="0.0" width="287" height="90"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="0.73338694179999997" green="0.71735930960000005" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your favorite songs to play" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgS-Ia-tjG">
+                                        <rect key="frame" x="0.0" y="112" width="287" height="60"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="0.73338694179999997" green="0.71735930960000005" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And begin your session!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDz-XK-AeU">
+                                        <rect key="frame" x="0.0" y="194" width="287" height="30"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="0.73338694179999997" green="0.71735930960000005" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Tao-p4-k6Q" firstAttribute="centerY" secondItem="ihK-Mv-aBv" secondAttribute="centerY" id="Yiz-EZ-zto"/>
+                            <constraint firstAttribute="trailing" secondItem="Tao-p4-k6Q" secondAttribute="trailing" constant="44" id="mHY-sZ-v7e"/>
+                            <constraint firstItem="Tao-p4-k6Q" firstAttribute="leading" secondItem="ihK-Mv-aBv" secondAttribute="leading" constant="44" id="pJU-IV-ipm"/>
+                            <constraint firstItem="Tao-p4-k6Q" firstAttribute="centerX" secondItem="ihK-Mv-aBv" secondAttribute="centerX" id="xUw-8Q-QR2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ihK-Mv-aBv"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ssx-CN-dh7" appends="YES" id="CZl-g0-j3d"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fg-ft-zUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ssx-CN-dh7">
+                    <connections>
+                        <segue destination="lMo-Kg-aaz" kind="show" id="i5e-sT-hZe"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4042.4000000000001" y="-797.45127436281871"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FZG-iz-w72">
+            <objects>
+                <viewController id="lMo-Kg-aaz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ua-UY-O60">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="E7f-8B-JJQ">
+                                <rect key="frame" x="44" y="249.5" width="287" height="188"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After that amount is up, the music will stop but the timer will continue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnl-Vb-aUm">
+                                        <rect key="frame" x="0.0" y="0.0" width="287" height="90"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="0.73338694179999997" green="0.71735930960000005" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track your shower times over long periods of time to show your progress!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vi6-f5-hm6">
+                                        <rect key="frame" x="0.0" y="98" width="287" height="90"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="0.73338694179999997" green="0.71735930960000005" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="E7f-8B-JJQ" firstAttribute="leading" secondItem="GIa-uW-0ad" secondAttribute="leading" constant="44" id="9F3-Vi-wbp"/>
+                            <constraint firstAttribute="trailing" secondItem="E7f-8B-JJQ" secondAttribute="trailing" constant="44" id="mzO-kf-O6g"/>
+                            <constraint firstItem="E7f-8B-JJQ" firstAttribute="centerY" secondItem="GIa-uW-0ad" secondAttribute="centerY" id="qCf-1a-fiC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GIa-uW-0ad"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="yxU-EF-dAP" appends="YES" id="SUr-kK-oQA"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SP1-4u-n1i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yxU-EF-dAP">
+                    <connections>
+                        <segue destination="oV8-fk-HoX" kind="show" id="710-hQ-XOA"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4792.8000000000002" y="-805.54722638680664"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EtK-aB-ivz">
+            <objects>
+                <viewController id="oV8-fk-HoX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X1C-6f-xXb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready for your first session?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhP-nG-mVD">
+                                <rect key="frame" x="44" y="301.5" width="287" height="84.5"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="35"/>
+                                <color key="textColor" red="0.73338694179999997" green="0.71735930960000005" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRi-dJ-ElG">
+                                <rect key="frame" x="97" y="452" width="181" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pRi-dJ-ElG" secondAttribute="height" multiplier="181:42" id="1VM-xL-P5t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <state key="normal" title="Let's get started!">
+                                    <color key="titleColor" red="0.73338694179999997" green="0.71735930960000005" blue="0.93809314970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Spf-dY-1hu" kind="show" id="Elc-n3-4Xq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="uhP-nG-mVD" firstAttribute="leading" secondItem="X1C-6f-xXb" secondAttribute="leading" constant="44" id="b2u-Z0-chV"/>
+                            <constraint firstItem="pRi-dJ-ElG" firstAttribute="centerX" secondItem="A6E-mS-gRM" secondAttribute="centerX" id="fM6-0C-z2g"/>
+                            <constraint firstItem="pRi-dJ-ElG" firstAttribute="top" secondItem="uhP-nG-mVD" secondAttribute="bottom" constant="66" id="jWP-1N-GFs"/>
+                            <constraint firstItem="uhP-nG-mVD" firstAttribute="centerX" secondItem="A6E-mS-gRM" secondAttribute="centerX" id="mnE-co-8AP"/>
+                            <constraint firstAttribute="trailing" secondItem="uhP-nG-mVD" secondAttribute="trailing" constant="44" id="rCJ-H8-OGL"/>
+                            <constraint firstItem="uhP-nG-mVD" firstAttribute="centerY" secondItem="A6E-mS-gRM" secondAttribute="centerY" id="tgr-Zi-KPg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A6E-mS-gRM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RzA-1t-cCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5500" y="-813.64317841079469"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wIn-Wj-FjY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="A4o-sV-rtL" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pkp-2Y-VEk">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="65o-hm-yq1">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Spf-dY-1hu" kind="relationship" relationship="rootViewController" id="Aby-L2-C4J"/>
+                        <segue destination="OqF-Pk-wJ7" kind="relationship" relationship="rootViewController" id="OuE-Ju-NZY"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tWB-a7-Lo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zso-gR-gtR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.80000000000000004" y="149.77511244377811"/>
+            <point key="canvasLocation" x="111.2" y="-783.05847076461771"/>
         </scene>
     </scenes>
 </document>

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DE5E584B0D38ED39F3BB8639 /* Pods_Showa_AppleMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CABC2B4A0CD3AC673414C0 /* Pods_Showa_AppleMusic.framework */; };
+		E847CEF72247B4BA00E90BDA /* launchShawa.png in Resources */ = {isa = PBXBuildFile; fileRef = E847CEF62247B4BA00E90BDA /* launchShawa.png */; };
+		E847CEFB2247B5A800E90BDA /* barc (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E847CEFA2247B5A800E90BDA /* barc (1).png */; };
+		E847CEFF2247B83300E90BDA /* Untitled design (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E847CEFE2247B83200E90BDA /* Untitled design (1).png */; };
 		E8C069BA2245FB9900760959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069B92245FB9900760959 /* AppDelegate.swift */; };
 		E8C069BC2245FB9900760959 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C069BB2245FB9900760959 /* ViewController.swift */; };
 		E8C069BF2245FB9900760959 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C069BD2245FB9900760959 /* Main.storyboard */; };
@@ -29,6 +32,9 @@
 /* Begin PBXFileReference section */
 		4E3398D322ED6CC5436C4624 /* Pods-Showa-AppleMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showa-AppleMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Showa-AppleMusic/Pods-Showa-AppleMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		E1CABC2B4A0CD3AC673414C0 /* Pods_Showa_AppleMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Showa_AppleMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E847CEF62247B4BA00E90BDA /* launchShawa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchShawa.png; sourceTree = "<group>"; };
+		E847CEFA2247B5A800E90BDA /* barc (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "barc (1).png"; sourceTree = "<group>"; };
+		E847CEFE2247B83200E90BDA /* Untitled design (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Untitled design (1).png"; sourceTree = "<group>"; };
 		E8C069B62245FB9900760959 /* Showa-AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Showa-AppleMusic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C069B92245FB9900760959 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8C069BB2245FB9900760959 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +110,7 @@
 				E8C069BB2245FB9900760959 /* ViewController.swift */,
 				E8C069BD2245FB9900760959 /* Main.storyboard */,
 				E8C069C32245FB9B00760959 /* Assets.xcassets */,
+				E847CEF62247B4BA00E90BDA /* launchShawa.png */,
 				E8C069C52245FB9B00760959 /* LaunchScreen.storyboard */,
 				E8C069C82245FB9B00760959 /* Info.plist */,
 				E8C069C02245FB9900760959 /* Showa_AppleMusic.xcdatamodeld */,
@@ -117,6 +124,8 @@
 				E8C069DC2246BFC400760959 /* UserService.swift */,
 				E8C069DE2246BFF500760959 /* Constants.swift */,
 				E8C069E02246C24400760959 /* Person.swift */,
+				E847CEFE2247B83200E90BDA /* Untitled design (1).png */,
+				E847CEFA2247B5A800E90BDA /* barc (1).png */,
 			);
 			path = "Showa-AppleMusic";
 			sourceTree = "<group>";
@@ -182,11 +191,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E847CEFF2247B83300E90BDA /* Untitled design (1).png in Resources */,
 				E8C069D52246BA5500760959 /* GoogleService-Info.plist in Resources */,
 				E8C069C72245FB9B00760959 /* LaunchScreen.storyboard in Resources */,
 				E8C069C42245FB9B00760959 /* Assets.xcassets in Resources */,
 				E8C069D72246BC1A00760959 /* Login.storyboard in Resources */,
 				E8C069BF2245FB9900760959 /* Main.storyboard in Resources */,
+				E847CEF72247B4BA00E90BDA /* launchShawa.png in Resources */,
+				E847CEFB2247B5A800E90BDA /* barc (1).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +214,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Showa-AppleMusic/Pods-Showa-AppleMusic-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftCharts/SwiftCharts.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -209,6 +222,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCharts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
